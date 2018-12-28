@@ -18,3 +18,5 @@ export const async = async (command: string, args: string[] = []): Promise<any> 
         });
     });
 };
+
+export default { spawn, async }
