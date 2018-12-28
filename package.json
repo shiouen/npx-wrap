@@ -1,6 +1,6 @@
 {
   "name": "npx-wrap",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A tiny wrap around npx, which executes the npx command",
   "main": "src/index.js",
   "scripts": {
