@@ -4,7 +4,8 @@
   "description": "A tiny wrap around npx, which executes the npx command",
   "main": "src/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
