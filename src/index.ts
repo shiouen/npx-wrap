@@ -2,7 +2,7 @@ import { ChildProcess } from "child_process";
 
 import cs from 'cross-spawn';
 
-async function async (command: string, args: string[] = []): Promise<any> {
+export async function async(command: string, args: string[] = []): Promise<any> {
     await new Promise((resolve, reject): void => {
         const child: ChildProcess = spawn(command, args, {
             stdio: 'inherit'
@@ -15,11 +15,9 @@ async function async (command: string, args: string[] = []): Promise<any> {
     });
 }
 
-function spawn (command: string, args: string[] = [], options: object = {}): ChildProcess {
+export function spawn(command: string, args: string[] = [], options: object = {}): ChildProcess {
     return cs.spawn('npx', [command, ...args], options);
 }
 
-export default {
-    async,
-    spawn
-}
+export default async;
+export const npx = { async, spawn };
