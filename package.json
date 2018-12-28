@@ -1,0 +1,27 @@
+{
+  "name": "npx-wrap",
+  "version": "0.0.0",
+  "description": "A tiny wrap around npx, which executes the npx command",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shiouen/npx-wrap.git"
+  },
+  "keywords": [
+    "npx-wrap",
+    "npx",
+    "wrap",
+    "node",
+    "spawn",
+    "npm"
+  ],
+  "author": "Olivier Van Aken <olivier.va@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shiouen/npx-wrap/issues"
+  },
+  "homepage": "https://github.com/shiouen/npx-wrap#readme"
+}
