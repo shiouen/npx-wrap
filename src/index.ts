@@ -19,5 +19,5 @@ export function spawn(command: string, args: string[] = [], options: object = {}
     return cs.spawn('npx', [command, ...args], options);
 }
 
-export default async;
 export const npx = { async, spawn };
+export default npx;
