@@ -24,6 +24,9 @@
     "url": "https://github.com/shiouen/npx-wrap/issues"
   },
   "homepage": "https://github.com/shiouen/npx-wrap#readme",
+  "files": [
+    "src/index.js"
+  ],
   "devDependencies": {
     "@types/node": "^10.12.18",
     "typescript": "^3.2.2"
