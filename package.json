@@ -2,7 +2,7 @@
   "name": "npx-wrap",
   "version": "0.0.5",
   "description": "A tiny wrap around npx, which executes the npx command",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build"
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/shiouen/npx-wrap#readme",
   "files": [
-    "src/index.js"
+    "dist/**/*"
   ],
   "devDependencies": {
     "@types/node": "^10.12.18",
