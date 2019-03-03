@@ -5,7 +5,7 @@ import cs from 'cross-spawn';
 /**
  * Spawns a command prefixed with 'npx' wrapped by a Promise.
  *
- * @param command The command prefixed with 'npx'
+ * @param command The command to be prefixed with 'npx'
  * @param args Child process args
  * @param options Child process options
  * @param output If true stdout and stderr of the ChildProcess will be passed on to the console.
@@ -46,7 +46,7 @@ export async function async(command: string, args: string[] = [], options: {} = 
 /**
  * Spawns a command prefixed with 'npx'
  *
- * @param command The command prefixed with 'npx'
+ * @param command The command to be prefixed with 'npx'
  * @param args Child process args
  * @param options Child process options
  * @returns ChildProcess The resulting ChildProcess
