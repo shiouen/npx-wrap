@@ -21,7 +21,11 @@
     "npm",
     "promise",
     "async",
-    "command"
+    "command",
+    "module",
+    "dependency",
+    "dev",
+    "tool"
   ],
   "author": "Olivier Van Aken <olivier.va@outlook.com>",
   "license": "MIT",
