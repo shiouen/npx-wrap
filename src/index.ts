@@ -32,8 +32,6 @@ export async function async(command: string, args: string[] = [], options: {} = 
     });
 }
 
-async('lol');
-
 /**
  * Spawns a command prefixed with 'npx'
  *
