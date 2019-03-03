@@ -12,24 +12,35 @@ import cs from 'cross-spawn';
  * @returns Promise<any>
  */
 export async function async(command: string, args: string[] = [], options: {} = {}, output: boolean = true): Promise<any> {
-    await new Promise((resolve, reject): void => {
-        const child: ChildProcess = spawn(command, args, options);
+    try {
+        const child = await new Promise((resolve, reject): void => {
+            const child: ChildProcess = spawn(command, args, options);
+            const stdio = [];
 
-        if (output) {
             child.stdout.on('data', (data) => {
-                console.info(data);
+                const info = data.toString().trim();
+                stdio.push(info);
+
+                if (output) console.info(info);
             });
 
             child.stderr.on('data', (data) => {
-                console.error(data);
-            });
-        }
+                const err = data.toString().trim();
+                stdio.push(err);
 
-        child.once('exit', (code: number): void => {
-            if (code !== 0) reject(code);
-            resolve(child);
+                if (output) console.info(err);
+            });
+
+            child.once('exit', (code: number, signal: string): void => {
+                if (code !== 0 || signal) reject({ stdio, code, signal });
+                resolve(child);
+            });
         });
-    });
+
+        return child;
+    } catch (err) {
+        throw err;
+    }
 }
 
 /**
