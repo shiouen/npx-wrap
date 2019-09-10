@@ -37,15 +37,15 @@
     "dist/src/**/*"
   ],
   "devDependencies": {
-    "@types/chai": "^4.1.7",
-    "@types/mocha": "^5.2.6",
-    "@types/node": "^10.12.18",
+    "@types/chai": "^4.2.2",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.4",
     "chai": "^4.2.0",
-    "mocha": "^6.0.2",
-    "ts-node": "^8.0.2",
-    "typescript": "^3.2.2"
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
   },
   "dependencies": {
-    "cross-spawn": "^6.0.5"
+    "cross-spawn": "^7.0.0"
   }
 }
